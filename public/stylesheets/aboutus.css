@@ -1,0 +1,274 @@
+/* ENTIRE DOCUMENT */
+/* Styling for the whole page */
+body {
+  /* Layout declarations */
+  margin: 0 auto;
+  /* Typography declarations */
+  font-size: 62.5%;
+  font-family: "Muli", "Helvetica Neue", "Arial", "sans-serif";
+  font-weight: 300;
+  color: #EDEDED;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* HEADER */
+.masthead {
+  /* Layout declarations */
+  background: url("../img/aboutBackground.jpg") no-repeat fixed center;
+  background-size: cover;
+  padding: 3em 2em;
+  text-align: center;
+  /* Typography declarations */
+  font-size: 4em;
+}
+
+.masthead-intro {
+  margin: 2em 0 0 0;
+}
+
+.masthead-heading {
+  /* Typography declarations */
+  font-size: 10rem;
+  /* Layout declarations */
+  padding: 0;
+  margin: 0 0 1em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  text-shadow:  1px 0px 1px #ccc, 0px 1px 1px #eee, 
+                2px 1px 1px #ccc, 1px 2px 1px #eee,
+                3px 2px 1px #ccc, 2px 3px 1px #eee,
+                4px 3px 1px #ccc, 3px 4px 1px #eee,
+                5px 4px 1px #ccc, 4px 5px 1px #eee,
+                6px 5px 1px #ccc, 5px 6px 1px #eee,
+                7px 6px 1px #ccc;
+opacity: 0.9;
+}
+
+/* BODY */
+/* General styling for the three sections of the body */
+section {
+  /* Layout declarations */
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: inherit;
+  letter-spacing: 2px;
+}
+
+/* Gradient that runs through the body */
+.gradient {
+  padding: 10em;
+  /* can be treated like a fallback */
+  background-color: white;
+  /* will be "on top", if browser supports it */
+  background-image: linear-gradient(white, lightgray);
+}
+
+/* The h2 tags are the main categories */
+h2 {
+  /* Typography declarations */
+  font-size: 4em;
+}
+
+/* The h3 tags are the additional questions */
+h3 {
+  /* Typography declarations */
+  font-style: italic;
+  font-size: 2.5em;
+}
+
+/* The p tags that are descendants of the section tags are the answers */
+section p {
+  /* Typography declarations */
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+/* This class is included in the last p tag of each section to create more space */
+.space-maker {
+  /* Layout declarations */
+  margin-bottom: 3em;
+}
+
+/* FOOTER */
+.content-footer {
+  /* Layout declarations */
+  background: lightgoldenrodyellow;
+  padding: 10em;
+}
+
+.content-footer > p {
+  /* Layout declarations */
+  line-height: 1.3em;
+  text-align: center;
+  /* Typography declarations */
+  font-size: 2em;
+}
+
+.social {
+  /* Layout declarations */
+  text-align: center;
+  padding: 0;
+}
+
+.social > li {
+  /* Layout declarations */
+  display: inline-block;
+  line-height: 1.3em;
+  margin-right: 2em;
+  /* Typography declarations */
+  font-size: 1.5em;
+}
+
+a {
+  /* Typography declarations */
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+a:hover {
+  /* Layout declarations */
+  color: #262626;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.social li:last-child {
+  /* Layout declarations */
+  margin-right: 0;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 500px) {
+  /* HEADER */
+  .masthead {
+    padding: 1em;
+  }
+  
+  .masthead-intro {
+    font-size: 1.5rem;
+  }
+  
+  .masthead-heading {
+    font-size: 4rem;
+  }
+  
+  /* BODY */
+  .gradient {
+    padding: 5em;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  section p {
+    font-size: 1rem;
+  }
+  
+  /* FOOTER */
+  .content-footer {
+    padding: 4em;
+  }
+  
+  .social > li {
+  /* Layout declarations */
+  display: block;
+  margin-right: 0;
+  }
+  
+  a {
+    line-height: 3em;
+  }
+  
+  .content-footer p a {
+    line-height: 0;
+  } 
+}
+
+  /* FOOTER */
+@media only screen and (max-width: 344px) {
+  .content-footer p a {
+    line-height: 3em;
+  }
+}
+
+
+  /* navbar */
+
+  .navbar {
+    border: 0;
+    z-index: 9999;
+    letter-spacing: 4px;
+    opacity: 0.7;
+}
+.logo {
+    display: block;
+    height: auto;
+    width: 52px;
+    padding-top: 3px;
+    margin-right: 50px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
+.navbar .nav > li > a {
+  line-height: 50px;
+}
+
+.navbar-header h1 {
+  letter-spacing: 10px;
+  color: yellowgreen !important;
+  font-family: 'Indie Flower', cursive;
+  font-size: 45px;
+}
+
+.navbar li a, .navbar {
+  color: black !important;
+  font-size: 16px;
+  transition: all 0.6s 0s;
+  font-family: 'Aclonica', sans-serif;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
+
+.navbar-toggle {
+  background-color: transparent !important;
+  border: 0;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: red !important;
+}
+#join{
+  border: solid 1px gray;
+  font-weight: bold;
+  background-color: lightsalmon;
+}
+/* navbar */
+#footer {
+  padding: 3px;
+  background-color:white;
+  text-align: center;
+  color:black;
+  font-size: 9px;
+  font-family: 'Trirong', serif;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left:0;
+  right:0;
+  opacity: 0.6;
+  letter-spacing: 5px;
+}
